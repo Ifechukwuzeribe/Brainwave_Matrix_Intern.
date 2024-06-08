@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>To Do List</title>
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<!-- Main container for the to-do list application -->
+<div class="todo-container clearfix">
+
+    <!-- Header section with task statistics -->
+    <header class="clearfix">
+        <h1>To Do List</h1>
+        <h2>Total Tasks : <span id="total-tasks">0</span></h2>
+        <h2>Tasks Remaining : <span id="tasks-remaining">0</span></h2>
+        <h2>Tasks Completed : <span id="completed-tasks">0</span></h2>
+    </header>
+
+    <!-- Input section for adding new tasks -->
+    <div class="input-container clearfix">
+        <label for="task-name">Enter your task</label>
+        <input type="text" id="task-name" placeholder="Enter task here"/>
+        <button class="theme-button">Add</button>
+    </div>
+
+    <!-- Container for displaying tasks and reset button -->
+    <div class="task-container clearfix">
+        <ul class="tasks">
+            <!-- List of tasks will be dynamically added here -->
+        </ul>
+        <button class="reset-btn">Reset</button>
+    </div>
+
+</div>
+
+<!-- Modal for editing tasks -->
+<div class="modal-parent hide">
+  <div class="modal-box">
+    <div class="modal">
+      <span class="modal-close">&times;</span>
+      <h2 id='new-value'>Enter New Value</h2>
+      <input type="text" id="edit-value"/>
+      <button id="edit-btn">Update</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for displaying error messages -->
+<div class="modal-parent hide">
+  <div class="error-box">
+    <div class="error">
+      <span class="error-close">&times;</span>
+      <h2 id='error-text'></h2>
+      <button class="theme-button theme-button-close" onclick='closeAlert()'>OKAY</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for confirming reset action -->
+<div class="modal-parent hide">
+  <div class="confirm-box clearfix">
+    <div class="confirm">
+      <span class="confirm-close">&times;</span>
+      <h2 id='confirm-text'>All entries will be deleted</h2>
+      <button class="theme-button" id='cancel'>Cancel</button>
+      <button class="theme-button btn-confirm" id='proceed'>Yes, Proceed</button>
+    </div>
+  </div>
+</div>
+
+<!-- Link to external JavaScript file -->
+<script src="./script.js"></script>
+
+</body>
+</html>
