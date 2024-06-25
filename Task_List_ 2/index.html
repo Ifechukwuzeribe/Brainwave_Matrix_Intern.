@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata about the document -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Fruit Farm</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header section -->
+    <div class="header">
+        <div class="container">
+            <!-- Navigation bar -->
+            <div class="navbar">
+                <!-- Logo section -->
+                <div class="logo">
+                    <img src="Images/logo.png" width="100px">
+                    <h1>Fresh Fruit Farm</h1>
+                    <p>Health is Wealth.</p>
+                </div>
+                <!-- Navigation links -->
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Product</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Account</a></li>
+                    </ul>
+                </nav>
+                <!-- Shopping cart icon -->
+                <img src="Images/cart_icon_28351.png" width="30px" height="30px" style="cursor: pointer;">
+                <!-- Menu toggle icon for responsive design -->
+                <img src="Images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+            <!-- Main banner section -->
+            <div class="row">
+                <div class="col-2">
+                    <h1>Enjoy Fresh Fruit<br> From the Farm!</h1>
+                    <a href="" class="btn">Enjoy Now &#8594</a>
+                </div>
+                <div class="col-2">
+                    <img src="Images/Mix_fruit-7.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Categories section -->
+    <div class="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="images/banana_2.PNG">
+                </div>
+                <div class="col-3">
+                    <img src="images/orange-white.jpg">
+                </div>
+                <div class="col-3">
+                    <img src="images/Grapes.PNG">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Featured Products section -->
+    <div class="small-container">
+        <h2 class="title">Featured Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/grape_2.PNG">
+                <h4>Green Apple</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$2</p>
+            </div>
+            <div class="col-4">
+                <img src="images/apple_red_350x350.jpg">
+                <h4>Red Apple</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$2.2</p>
+            </div>
+            <div class="col-4">
+                <img src="images/Fresh_Guava.png">
+                <h4>Guava</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$1</p>
+            </div>
+            <div class="col-4">
+                <img src="images/apple_green_350x350.jpg">
+                <h4>Lime</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$2</p>
+            </div>
+        </div>
+        <!-- Latest Products section -->
+        <h2 class="title">Latest Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/delicious-fresh-avocados-standing-blue-background.jpg">
+                <h4>Avocados</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$2.6</p>
+            </div>
+            <div class="col-4">
+                <img src="images/strawberry-7224875_640.jpg">
+                <h4>Strawberry</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$3</p>
+            </div>
+            <div class="col-4">
+                <img src="images/green-striped-ripe-watermelon-with-slice-cross-section-isolated-white-background-with-copy-space-text-images-special-kind-berry-sweet-pink-flesh-with-black-seeds-side-view.jpg">
+                <h4>Watermelon</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$1.5</p>
+            </div>
+            <div class="col-4">
+                <img src="images/pears_186063.jpg">
+                <h4>Pear</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$1.9</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/fresh-coconuts-white-surface.jpg">
+                <h4>Coconut</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$2</p>
+            </div>
+            <div class="col-4">
+                <img src="images/favpng_soursop-sugar-apple-custard-cancer-sugar-apple.png">
+                <h4>Soursop</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$2.3</p>
+            </div>
+            <div class="col-4">
+                <img src="images/kiwi_518956.jpg">
+                <h4>Kiwi</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$1</p>
+            </div>
+            <div class="col-4">
+                <img src="images/pngkey.com-dry-fruits-png-2607900.png">
+                <h4>Dates</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$1.5</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Offer section -->
+    <div class="Offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="Images/pexels-suki-lee-15738940.jpg" class="offer-img">
+                </div>
+                <div class="col-2">
+                    <p>Available on Fresh Fruit Farm</p>
+                    <h1>Lemon</h1>
+                    <small>A great source of Vitamin C and fiber, lemon contains many plant compounds, minerals, and essential oils. Eating lemon may lower your risk of heart disease, cancer, and kidney stones.</small> <br>
+                    <a href="" class="btn">Buy Now &#8594</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Testimonial section -->
+    <div class="Testimonial"></div>
+    <div class="small-container">
+        <h2 class="title">Review</h2>
+        <div class="row">
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p>I just received my order, the fruits are fresh and healthy</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p>The delivery was quick and smooth</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p>The website is user friendly</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer section -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Column 1: App download links -->
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and iOS mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="Images/App_Store-white_logo.PNG">
+                        <img src="Images/Google_play_white_logo.PNG">
+                    </div>
+                </div>
+                <!-- Column 2: Logo and slogan -->
+                <div class="footer-col-2">
+                    <img src="Images/logo.PNG">
+                    <p>Satisfying customers is our priority.</p>
+                </div>
+                <!-- Column 3: Useful links -->
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <!-- Column 4: Social media links -->
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <!-- Copyright information -->
+            <p class="copyright">Copyright 2024</p>
+        </div>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script type="text/javascript" src="./script.js"></script>
+
+</body>
+</html>
